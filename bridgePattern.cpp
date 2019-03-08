@@ -175,7 +175,8 @@ void onTask()
     LinuxSystemBase *sb = new LinuxSystemBase(imp);
     sb->downloadApp();
     sb->installMedIa();
-    
+    delete imp;
+    delete sb;   
 }
 
 int main(int argc, const char * argv[]) {
